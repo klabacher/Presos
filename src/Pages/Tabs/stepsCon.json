@@ -1,0 +1,562 @@
+[
+  [
+  {
+  "type": "int",
+  "label": "ATROPELAMENTO",
+  "description": "Pena multiplicada por pessoa atropelada.",
+  "multa": "10000",
+  "meses": "10",
+  "fianca": "25000"
+  },
+  {
+  "type": "radio",
+  "label": "ALTA VELOCIDADE",
+  "description": "",
+  "multa": "5000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "DIREÇÃO PERIGOSA",
+  "description": "Se caracteriza direção perigosa quando o indivíduo soma os seguintes códigos: Contra-mão, alta velocidade e avançar o semáfaro vermelho.",
+  "multa": "15000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "int",
+  "label": "ULTRAPASSAR SEMÁFARO VERMELHO  ",
+  "description": "Pena multiplicada por cada semáfaro ultrapassado.",
+  "multa": "5000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ABANDONO DE VEÍCULO DE TRABALHO",
+  "description": "",
+  "multa": "20000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "UTILIZAR VEÍCULO DANIFICADO",
+  "description": "O veículo será rebocado para a mecânica, onde o proprietário deverá consertar. Todos os custos (quincho e reparo) será custeado pelo proprietário do veículo.",
+  "multa": "8000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ESTACIONAR EM LOCAL PROIBIDO",
+  "description": "",
+  "multa": "5000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "DIREÇÃO SOB EFEITO DE EMBRIAGUEZ",
+  "description": "",
+  "multa": "10000",
+  "meses": "8",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "PILOTAR MOTOCICLETA SEM CAPACETE",
+  "description": "",
+  "multa": "5000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ABANDONO DE VEÍCULO PESSOAL",
+  "description": "",
+  "multa": "10000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "PARTICIPAÇÃO DE CORRIDAS CLANDESTINAS",
+  "description": "",
+  "multa": "25000",
+  "meses": "25",
+  "fianca": "40000"
+  }
+  ],
+  [
+  {
+  "type": "int",
+  "label": "PORTE DE ALGEMAS                 ",
+  "description": "Pena multiplicada a cada algema encontrada.",
+  "multa": "5000",
+  "meses": "8",
+  "fianca": "10000"
+  },
+  {
+  "type": "int",
+  "label": "PORTE DE LOCKPICK                 ",
+  "description": "Pena multiplicada a cada lockpick encontrado.",
+  "multa": "8000",
+  "meses": "8",
+  "fianca": "16000"
+  },
+  {
+  "type": "int",
+  "label": "PORTE DE MASTERPICK            ",
+  "description": "",
+  "multa": "10000",
+  "meses": "15",
+  "fianca": "20000"
+  },
+  {
+  "type": "int",
+  "label": "PORTE DE C4, SERRA, FURADEIRA OU PENDRIVE       ",
+  "description": "Pena multiplicada a cada ítem encontrado.",
+  "multa": "10000",
+  "meses": "15",
+  "fianca": "20000"
+  },
+  {
+  "type": "int",
+  "label": "PORTE DE ORGÃOS ",
+  "description": "Pena multiplicada a cada orgão encontrado.",
+  "multa": "6000",
+  "meses": "10",
+  "fianca": "12000"
+  },
+  {
+  "type": "int",
+  "label": "PORTE DE CAPUZ     ",
+  "description": "Pena multiplicada a cada capuz encontrado.",
+  "multa": "2000",
+  "meses": "5",
+  "fianca": "5000"
+  },
+  {
+  "type": "radio",
+  "label": "TRAJES DO PODER PÚBLICO",
+  "description": "",
+  "multa": "15000",
+  "meses": "35",
+  "fianca": "30000"
+  },
+  {
+  "type": "radio",
+  "label": "UTILIZAÇÃO OU PORTE DE COLETE BALÍSTICO",
+  "description": "",
+  "multa": "8000",
+  "meses": "10",
+  "fianca": "15000"
+  },
+  {
+  "type": "radio",
+  "label": "OCULTAÇÃO FACIAL",
+  "description": "O indivíduo que ocultar a face, será considerado suspeito.",
+  "multa": "8000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "UTILIZAÇÃO DE CAPACETE BALÍSTICO",
+  "description": "",
+  "multa": "5000",
+  "meses": "8",
+  "fianca": "10000"
+  },
+  {
+  "type": "radio",
+  "label": "UTILIZAÇÃO DE COLDRE",
+  "description": "O indivíduo que estiver utilizando coldre, será considerado suspeito.",
+  "multa": "10000",
+  "meses": 0,
+  "fianca": "FALSE"
+  }
+  ],
+  [
+  {
+  "type": "radio",
+  "label": "ASSALTO A JOALHERIA",
+  "description": "Passivo a agravante.",
+  "multa": "25000",
+  "meses": "25",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ASSALTO A LOJAS DE DEPARTAMENTO OU AMMUMATION",
+  "description": "Passivo a agravante.",
+  "multa": "15000",
+  "meses": "20",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ASSALTO A CAIXA ELETRÔNICO",
+  "description": "Passivo a agravante.",
+  "multa": "10000",
+  "meses": "15",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ASSALTO A CAIXA REGISTRADORA",
+  "description": "Passivo a agravante.",
+  "multa": "10000",
+  "meses": "12",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "CRIMES CIBERNÉTICOS",
+  "description": "Passivo a agravante.",
+  "multa": "10000",
+  "meses": "15",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ASSALTO A RESIDÊNCIA",
+  "description": "Passivo a agravante.",
+  "multa": "10000",
+  "meses": "25",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ASSALTO A BANCO",
+  "description": "Passivo a agravante.",
+  "multa": "30000",
+  "meses": "30",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ASSALTO A CIVIL",
+  "description": "Passivo a agravante.",
+  "multa": "15000",
+  "meses": "20",
+  "fianca": "FALSE"
+  }
+  ],
+  [
+  {
+  "type": "radio",
+  "label": "RESISTÊNCIA A PRISÃO",
+  "description": "",
+  "multa": "5000",
+  "meses": "15",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "OMISSÃO A SOCORRO",
+  "description": "",
+  "multa": "12000",
+  "meses": "10",
+  "fianca": "25000"
+  },
+  {
+  "type": "radio",
+  "label": "DANO AO PATRIMÔNIO PÚBLICO OU PRIVADO",
+  "description": "",
+  "multa": "5000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "DIFAMAÇÃO",
+  "description": "Ato de desonrar alguém disseminando informações inverídicas,",
+  "multa": "15000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "INJÚRIA",
+  "description": "Dizer algo desonroso e prejudicial, por exemplo, chamar de ladrão.",
+  "multa": "15000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "FUGA DE ABORDAGEM POLICIAL",
+  "description": "",
+  "multa": "7000",
+  "meses": "15",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "TENTATIVA DE FURTO OU ROUBO",
+  "description": "",
+  "multa": "12000",
+  "meses": "20",
+  "fianca": "25000"
+  },
+  {
+  "type": "radio",
+  "label": "OBSTRUÇÃO DE JUSTIÇA",
+  "description": "",
+  "multa": "15000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "ROUBO (subtração com ameaça ou lesão)",
+  "description": "",
+  "multa": "15000",
+  "meses": "20",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "FURTO (subtração sem ameaça ou lesão)",
+  "description": "",
+  "multa": "6000",
+  "meses": "15",
+  "fianca": "15000"
+  },
+  {
+  "type": "radio",
+  "label": "MULTAS PENDENTES",
+  "description": "Pena multiplicada a cada R$2.000,00 de débito.",
+  "multa": "0",
+  "meses": "5",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "INVASÃO A PROPRIEDADE PRIVADA",
+  "description": "",
+  "multa": "10000",
+  "meses": "25",
+  "fianca": "20000"
+  }
+  ],
+  [
+  {
+  "type": "radio",
+  "label": "DESACATA AO SERVIDOR PÚBLICO",
+  "description": "",
+  "multa": "15000",
+  "meses": "30",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "EXTORSÃO",
+  "description": "",
+  "multa": "8000",
+  "meses": "25",
+  "fianca": "15000"
+  },
+  {
+  "type": "radio",
+  "label": "FALSIDADE IDEOLÓGICA",
+  "description": "",
+  "multa": "8000",
+  "meses": "20",
+  "fianca": "15000"
+  },
+  {
+  "type": "radio",
+  "label": "FALSO TESTEMUNHO",
+  "description": "",
+  "multa": "8000",
+  "meses": "15",
+  "fianca": "15000"
+  },
+  {
+  "type": "radio",
+  "label": "CALÚNIA (incriminar terceiros sem provas cabíveis)",
+  "description": "",
+  "multa": "6000",
+  "meses": "15",
+  "fianca": "10000"
+  },
+  {
+  "type": "radio",
+  "label": "TENTATIVA DE SUBORNO A POLICIAL",
+  "description": "Oferecer ou prometer vantagem indevida ao Policial.",
+  "multa": "8000",
+  "meses": "20",
+  "fianca": "15000"
+  },
+  {
+  "type": "radio",
+  "label": "ASSÉDIO MORAL OU FÍSICO",
+  "description": "",
+  "multa": "5000",
+  "meses": "15",
+  "fianca": "15000"
+  },
+  {
+  "type": "radio",
+  "label": "POLUIÇÃO SONORA",
+  "description": "",
+  "multa": "3000",
+  "meses": "10",
+  "fianca": "10000"
+  },
+  {
+  "type": "radio",
+  "label": "ABUSO DE AUTORIDADE",
+  "description": "Será encaminhado para o tribunal, podendo levar punições.",
+  "multa": "20000",
+  "meses": 0,
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "LESÃO CORPORAL",
+  "description": "",
+  "multa": "7000",
+  "meses": "12",
+  "fianca": "15000"
+  },
+  {
+  "type": "radio",
+  "label": "FORMAÇÃO DE QUADRILHA",
+  "description": "Considera quadrilha a associação de 04 ou mais pessoas para cometer crimes.",
+  "multa": "10000",
+  "meses": "15",
+  "fianca": "20000"
+  },
+  {
+  "type": "radio",
+  "label": "AMEAÇA A TERCEIROS",
+  "description": "",
+  "multa": "10000",
+  "meses": "15",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "DESOBEDIÊNCIA A ORDEM POLICIAL",
+  "description": "",
+  "multa": "10000",
+  "meses": "15",
+  "fianca": "FALSE"
+  }
+  ],
+  [
+  {
+  "type": "radio",
+  "label": "HOMICÍDIO (com intenção de matar)",
+  "description": "",
+  "multa": "15000",
+  "meses": "25",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "int",
+  "label": "SEQUESTRO OU CÁRCERE PRIVADO       (quantidade) ",
+  "description": "Pena multiplicada a cada refém.",
+  "multa": "12000",
+  "meses": "20",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "TENTATIVA DE HOMICÍDIO",
+  "description": "Também em caso de derrota na ação.",
+  "multa": "10000",
+  "meses": "20",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "CHACINA (Caracteriza o homicídio de 04 ou mais pessoas)",
+  "description": "",
+  "multa": "20000",
+  "meses": "30",
+  "fianca": "FALSE"
+  }
+  ],
+  [
+  {
+  "type": "radio",
+  "label": "PORTE DE ARMA LEVE",
+  "description": "Pena multiplicada a cada armamento encontrado.",
+  "multa": "8000",
+  "meses": "10",
+  "fianca": "15000"
+  },
+  {
+  "type": "radio",
+  "label": "PORTE DE ARMA PESADA",
+  "description": "Pena multiplicada a cada armamento encontrado.",
+  "multa": "10000",
+  "meses": "20",
+  "fianca": "18000"
+  },
+  {
+  "type": "int",
+  "label": "PORTE DE MUNIÇÃO (quando não possui armamento    ",
+  "description": "Pena multiplicado a cada 30 munições encontradas.",
+  "multa": "5000",
+  "meses": "5",
+  "fianca": "10000"
+  },
+  {
+  "type": "radio",
+  "label": "PORTE DE MUNIÇÃO À CIMA DO PERMITIDO (com porte)",
+  "description": "Perda do porte de armas. Pena multiplicada a cada 10 munições encontradas.",
+  "multa": "5000",
+  "meses": "5",
+  "fianca": "20000"
+  }
+  ],
+  [
+  {
+  "type": "int",
+  "label": "TRÁFICO DE DROGAS (a cima de 05 unidades) (qnde) ",
+  "description": "Pena multiplicada a cada 10 drogas encontradas.",
+  "multa": "10000",
+  "meses": "8",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "TRÁFICO DE MATERIAL BALÍSTICO",
+  "description": "",
+  "multa": "12000",
+  "meses": "15",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "radio",
+  "label": "POSSE DE DROGAS (a cima de 06 unidades)",
+  "description": "",
+  "multa": "10000",
+  "meses": "8",
+  "fianca": "FALSE"
+  },
+  {
+  "type": "int",
+  "label": "POSSE DE MUNIÇÕES OU COMPONENTES DE ARMA       ",
+  "description": "Pena multiplicada a cada 30 itens encontrados.",
+  "multa": "12000",
+  "meses": "15",
+  "fianca": "20000"
+  },
+  {
+  "type": "int",
+  "label": "DINHEIRO SUJO    (colocar a qntidade de dinheiro sujo) ",
+  "description": "Pena multiplicada por cada R$2.000,00 de dinheiro sujo encontrado.",
+  "multa": "10000",
+  "meses": "1",
+  "fianca": "FALSE"
+  }
+  ]
+  ]
