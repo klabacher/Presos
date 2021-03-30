@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Checkbox, TextInput } from 'react-desktop/windows';
 import CrimesJson from '../Pages/Tabs/stepsCon.json';
 
 export default function crime({ activeStep, props }) {
   return (
-    <div className="div-crimes" style={{ margin: '10px', overflow: 'auto' }}>
+    <div
+      key="10"
+      className="div-crimes"
+      style={{ margin: '10px', overflow: 'auto' }}
+    >
       {CrimesJson[activeStep].map((data, index) => {
         if (data.type === 'radio') {
           return (
-            <div>
-              <div key={index} className="div-linha" layout="horizontal">
+            <div key={index}>
+              <div className="div-linha" layout="horizontal">
                 <Checkbox
                   theme={props.theme}
                   defaultValue={data.label}
@@ -29,8 +33,8 @@ export default function crime({ activeStep, props }) {
         }
         if (data.type === 'int') {
           return (
-            <div>
-              <div key={index} className="div-linha" layout="horizontal">
+            <div key={index}>
+              <div className="div-linha" layout="horizontal">
                 <TextInput
                   theme={props.theme}
                   color={props.color}
@@ -46,6 +50,7 @@ export default function crime({ activeStep, props }) {
             </div>
           );
         }
+        return 'default';
       })}
     </div>
   );

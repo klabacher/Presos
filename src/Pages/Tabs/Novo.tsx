@@ -8,8 +8,6 @@ import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Crime from '../../components/crime';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import CrimesJson from './stepsCon.json';
 
 function getSteps() {
   return [
@@ -87,6 +85,7 @@ class Novo extends Component {
   };
 
   text = (e, data) => {
+    console.log(data, e.target.value);
     if (e.target.checked) {
       this.setState((state) => {
         return { multa: state.multa + data.multa };
@@ -96,7 +95,7 @@ class Novo extends Component {
 
   render() {
     return (
-      <div style={{ backgroundColor: 'inherit', 'border-radius': 3 }}>
+      <div style={{ backgroundColor: 'inherit', borderRadius: 3 }}>
         <div>
           <div>
             <Stepper
