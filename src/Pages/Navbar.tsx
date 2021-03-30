@@ -12,7 +12,7 @@ export default class Title extends Component {
   }
 
   renderItem(title, content) {
-    console.log(this.props)
+    console.log(this.props);
     return (
       <NavPaneItem
         title={title}
@@ -24,7 +24,7 @@ export default class Title extends Component {
         push
         style={{
           height: '1000px',
-          backgroundSize: 'cover'
+          backgroundSize: 'cover',
         }}
       >
         {content}
@@ -98,7 +98,13 @@ export default class Title extends Component {
   render() {
     const { color, theme } = this.props;
     return (
-      <NavPane openLength={200} push color={color} theme={theme}>
+      <NavPane
+        openLength={200}
+        defaultIsPaneExpanded={false}
+        push
+        color={color}
+        theme={theme}
+      >
         {this.renderItem('Novo', <Novo theme={theme} />)}
         {this.renderItem('Presos', 'Content 2')}
         {this.renderItem('Opções', 'Content 3')}

@@ -24,3 +24,60 @@
   border-radius: 3;
   color: 'white';
 }
+.button-container{
+  float: right;
+  margin-right: 10px;
+
+}
+.div-crimes{
+  max-height:637px;
+  min-height:637px;
+  background-color: #000000ad;
+  padding-left: 25px;
+  padding-top:15px 
+}
+.div-linha{
+  display: inline-flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.description{
+  margin: 20px;
+  text-decoration: underline;
+}
+.description-checkbox{
+  margin: 5px 15px 0px 25px;
+  text-decoration: underline;
+  max-width: 700px;
+}
+@media(max-width:1348px){
+
+}
+@media (min-height:1200px){
+  .div-crimes{
+    max-height:400px
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  
+}

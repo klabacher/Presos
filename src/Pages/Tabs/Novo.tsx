@@ -14,7 +14,8 @@ import {
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
-
+import Crime from '../../components/crime';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import CrimesJson from './stepsCon.json';
 
 function getSteps() {
@@ -52,7 +53,9 @@ class Novo extends Component {
 
   handleBack = () => {
     this.setState((state) => {
-      return { activeStep: state.activeStep - 1 };
+      if (state.activeStep - 1 >= 0)
+        return { activeStep: state.activeStep - 1 };
+      return null;
     });
   };
 
@@ -67,7 +70,8 @@ class Novo extends Component {
     }, 2000);
   };
 
-  cancel = () => {
+  handleCancel = () => {
+
     this.setState({ showLoader: false, showError: false });
   };
 
@@ -103,11 +107,10 @@ class Novo extends Component {
 
   render() {
     return (
-      <div style={{"backgroundColor": "inherit", "border-radius": 3 }}>
+      <div style={{ backgroundColor: 'inherit', 'border-radius': 3 }}>
         <div>
           <div>
             <Stepper
-              // className="StepperMaindiv"
               activeStep={this.state.activeStep}
               orientation="horizontal"
             >
@@ -125,52 +128,14 @@ class Novo extends Component {
               })}
             </Stepper>
           </div>
-          <div style={{ margin: '10px' }}>
-            {CrimesJson[this.state.activeStep].map((data, index) => {
-              if (data.type === 'radio') {
-                return (
-                  <View
-                    key={index}
-                    margin="10px"
-                    padding="1px"
-                    layout="vertical"
-                  >
-                    <Checkbox
-                      theme={this.props.theme}
-                      defaultValue={data.label}
-                      onChange={(e) => this.radio(e, data)}
-                      label={data.label}
-                    />
-                    <Text color="#FFFFFF" theme="light">
-                      {data.description}
-                    </Text>
-                  </View>
-                );
-              }
-              if (data.type === 'int') {
-                return (
-                  <View key={index} margin="10px" layout="horizontal">
-                    <TextInput
-                      theme={this.props.theme}
-                      color={this.props.color}
-                      label={data.label}
-                      defaultValue="0"
-                    />
-                    <Text color="#FFFFFF" theme="light">
-                      {data.description}
-                    </Text>
-                  </View>
-                );
-              }
-            })}
-          </div>
+          <Crime activeStep={this.state.activeStep} props={this.props} />
 
-          <View layout="vertical">
+          <div className="button-container">
             <Text color="red" hidden={!this.state.showError}>
               There was an error submitting this form.
             </Text>
 
-            <View horizontalAlignment="right">
+            <View>
               <ProgressCircle
                 size={32}
                 hidden={!this.state.showLoader}
@@ -184,7 +149,7 @@ class Novo extends Component {
                   push
                   style={{ marginRight: '8px' }}
                 >
-                  Submit
+                  Finalizar
                 </Button>
               )}
               {this.state.activeStep !== 7 && (
@@ -195,12 +160,17 @@ class Novo extends Component {
                   push
                   style={{ marginRight: '8px' }}
                 >
-                  Next
+                  Próximo
                 </Button>
               )}
-              <Button onClick={this.handleBack}>Cancel</Button>
+              {this.state.activeStep === 1 && (
+                <Button onClick={this.handleBack}>Voltar</Button>
+              )}
+              {this.state.activeStep !== 1 && (
+                <Button onClick={this.handleCancel}>Cancelar</Button>
+              )}
             </View>
-          </View>
+          </div>
         </div>
       </div>
     );
