@@ -2,14 +2,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
-import {
-  Checkbox,
-  TextInput,
-  Text,
-  View,
-  ProgressCircle,
-  Button,
-} from 'react-desktop/windows';
+import { Text, View, ProgressCircle, Button } from 'react-desktop/windows';
 
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -71,12 +64,10 @@ class Novo extends Component {
   };
 
   handleCancel = () => {
-
     this.setState({ showLoader: false, showError: false });
   };
 
   radio = (e, data) => {
-    console.log(this.state.multa, this.state.meses);
     if (e.target.checked) {
       this.setState((state) => {
         return {
@@ -96,8 +87,6 @@ class Novo extends Component {
   };
 
   text = (e, data) => {
-    console.log(this.state.multa);
-    console.log(e.target.checked, data);
     if (e.target.checked) {
       this.setState((state) => {
         return { multa: state.multa + data.multa };
