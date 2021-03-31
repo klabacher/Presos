@@ -1,8 +1,10 @@
 import React from 'react';
 import { Checkbox, TextInput } from 'react-desktop/windows';
 import CrimesJson from '../Pages/Tabs/stepsCon.json';
+import { fixlabel } from '../utils';
 
-export default function crime({ activeStep, props }) {
+export default function crime({ state, activeStep, props, radioCB, TextCB }) {
+  console.log(state)
   return (
     <div
       key="10"
@@ -17,7 +19,7 @@ export default function crime({ activeStep, props }) {
                 <Checkbox
                   theme={props.theme}
                   defaultValue={data.label}
-                  onChange={(e) => this.radio(e, data)}
+                  onChange={(e) => radioCB(e, data)}
                   label={data.label}
                 />
                 {data.description !== '' && (
@@ -40,6 +42,8 @@ export default function crime({ activeStep, props }) {
                   color={props.color}
                   label={data.label}
                   defaultValue="0"
+                  value={state[fixlabel(data.label)]}
+                  onChange={(e) => TextCB(e, data)}
                 />
                 <div className="description">
                   <p color="#FFFFFF" theme="light">

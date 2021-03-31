@@ -26,7 +26,7 @@
   },
   {
   "type": "int",
-  "label": "ULTRAPASSAR SEMÁFARO VERMELHO  ",
+  "label": "ULTRAPASSAR SEMÁFARO VERMELHO",
   "description": "Pena multiplicada por cada semáfaro ultrapassado.",
   "multa": "5000",
   "meses": 0,
@@ -92,7 +92,7 @@
   [
   {
   "type": "int",
-  "label": "PORTE DE ALGEMAS                 ",
+  "label": "PORTE DE ALGEMAS",
   "description": "Pena multiplicada a cada algema encontrada.",
   "multa": "5000",
   "meses": "8",
@@ -100,7 +100,7 @@
   },
   {
   "type": "int",
-  "label": "PORTE DE LOCKPICK                 ",
+  "label": "PORTE DE LOCKPICK",
   "description": "Pena multiplicada a cada lockpick encontrado.",
   "multa": "8000",
   "meses": "8",
@@ -108,7 +108,7 @@
   },
   {
   "type": "int",
-  "label": "PORTE DE MASTERPICK            ",
+  "label": "PORTE DE MASTERPICK",
   "description": "",
   "multa": "10000",
   "meses": "15",
@@ -116,7 +116,7 @@
   },
   {
   "type": "int",
-  "label": "PORTE DE C4, SERRA, FURADEIRA OU PENDRIVE       ",
+  "label": "PORTE DE C4, SERRA, FURADEIRA OU PENDRIVE",
   "description": "Pena multiplicada a cada ítem encontrado.",
   "multa": "10000",
   "meses": "15",

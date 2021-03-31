@@ -8,6 +8,7 @@ import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Crime from '../../components/crime';
+import { fixlabel } from '../../utils';
 
 function getSteps() {
   return [
@@ -85,12 +86,18 @@ class Novo extends Component {
   };
 
   text = (e, data) => {
-    console.log(data, e.target.value);
-    if (e.target.checked) {
-      this.setState((state) => {
-        return { multa: state.multa + data.multa };
-      });
-    }
+    //console.log(fixlabel(data.label));
+    this.setState(() => {
+      return { [fixlabel(data.label)]: e.target.value }
+    });
+    // this.setState((state) => {
+    //   return { multa: state.multa + data.multa };
+    // });
+    // console.log(data, e.target.value);
+    // this.setState((state) => {
+    //   console.log('multa', state.multa, data.multa);
+    //   return { multa: state.multa + data.multa };
+    // });
   };
 
   render() {
@@ -116,7 +123,13 @@ class Novo extends Component {
               })}
             </Stepper>
           </div>
-          <Crime activeStep={this.state.activeStep} props={this.props} />
+          <Crime
+            state={this.state}
+            activeStep={this.state.activeStep}
+            props={this.props}
+            radioCB={this.radio}
+            TextCB={this.text}
+          />
 
           <div className="button-container">
             <Text color="red" hidden={!this.state.showError}>
