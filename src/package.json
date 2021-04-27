@@ -16,6 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
-    "react-desktop": "^0.3.9"
+    "axios": "^0.21.1",
+    "react-desktop": "^0.3.9",
+    "sweetalert": "^2.1.2"
   }
 }

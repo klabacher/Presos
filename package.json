@@ -292,7 +292,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "sspre-commit": "lint-staged"
     }
   }
 }
