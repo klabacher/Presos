@@ -77,6 +77,10 @@ const createWindow = async () => {
     },
   });
 
+  // Menu Bar invisible
+  mainWindow.setMenuBarVisibility(true);
+  mainWindow.setAutoHideMenuBar(true);
+
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   // @TODO: Use 'ready-to-show' event

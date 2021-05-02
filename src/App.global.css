@@ -2,13 +2,11 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
- body {
+body {
   position: relative;
   color: white;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
-  ), url('../assets/mCeonzr.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../assets/mCeonzr.jpg');
   font-family: sans-serif;
   overflow-y: hidden;
   min-height: 100%;
@@ -32,9 +30,50 @@
   max-width: 250px;
   justify-content: start;
 }
-.btnSubmit{
+.btnSubmit {
   border-radius: 5px;
 }
+
+.Multar {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  margin-right: 125px;
+  height: 50px;
+  width: 200px;
+  border-radius: 15px;
+  border-color: transparent;
+  background-color: rgb(204, 127, 41);
+}
+.Prender {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  margin-right: 125px;
+  height: 50px;
+  width: 200px;
+  border-radius: 15px;
+  border-color: transparent;
+  background-color: rgb(204, 127, 41);
+}
+.Deter {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  margin-right: 125px;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  border-color: transparent;
+  background-color: rgb(67, 68, 68);
+}
+
+.name {
+  text-align: center;
+  font-size: 30px;
+  color: #555;
+}
+
 .StepperMaindiv {
   background: none;
   flex: auto;
@@ -43,53 +82,51 @@
   border-radius: 3;
   color: 'white';
 }
-.button-container{
+.button-container {
   float: right;
   margin-right: 10px;
 }
-#datetime-local{
+#datetime-local {
   text-decoration-color: white !important;
   color: white !important;
   font-size: 30px;
 }
-#datetime-local-label{
+#datetime-local-label {
   text-decoration-color: whitesmoke !important;
   color: whitesmoke !important;
 }
-.div-crimes{
-  max-height:637px;
-  min-height:637px;
+.div-crimes {
+  max-height: 637px;
+  min-height: 637px;
   background-color: #000000ad;
   padding-left: 25px;
-  padding-top:15px
+  padding-top: 15px;
 }
-.div-linha{
+.div-linha {
   display: inline-flex;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.description{
+.description {
   margin: 20px;
   text-decoration: underline;
 }
-.description-checkbox{
+.description-checkbox {
   margin: 5px 15px 0px 25px;
   text-decoration: underline;
   max-width: 700px;
 }
-@media(max-width:1348px){
-
+@media (max-width: 1348px) {
 }
-@media (min-height:1200px){
-  .div-crimes{
-    max-height:400px
+@media (min-height: 1200px) {
+  .div-crimes {
+    max-height: 400px;
   }
 }
 
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
-
 }
 
 /* Track */
@@ -106,5 +143,4 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-
 }
